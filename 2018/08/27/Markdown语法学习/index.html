@@ -6,23 +6,23 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://fenggang1210.github.io">
-  <title>Markdown语法学习 | Hexo</title>
+  <title>Markdown语法学习 | Blues</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="参考:http://www.markdown.cn/#emphasis  标题 行首使用1-6个”#”，定义1-6级标题 — Setext格式或者底部使用任意数量”=”或”-“表示最高级标题和第二级标题 — atx格式  例子1： “### 三级标题”  三级标题 例子二: “第二级标题—————–”  第二级标题 区块引用 区块引用使用 “&amp;gt;”,并且可以嵌套使用,其他的Markdown语">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Markdown语法学习">
 <meta property="og:url" content="https://fenggang1210.github.io/2018/08/27/Markdown语法学习/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="Blues">
 <meta property="og:description" content="参考:http://www.markdown.cn/#emphasis  标题 行首使用1-6个”#”，定义1-6级标题 — Setext格式或者底部使用任意数量”=”或”-“表示最高级标题和第二级标题 — atx格式  例子1： “### 三级标题”  三级标题 例子二: “第二级标题—————–”  第二级标题 区块引用 区块引用使用 “&amp;gt;”,并且可以嵌套使用,其他的Markdown语">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="https://fenggang1210.github.io/2018/08/27/Markdown语法学习/路径">
-<meta property="og:updated_time" content="2018-08-27T12:07:47.795Z">
+<meta property="og:updated_time" content="2018-08-27T12:23:54.211Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Markdown语法学习">
 <meta name="twitter:description" content="参考:http://www.markdown.cn/#emphasis  标题 行首使用1-6个”#”，定义1-6级标题 — Setext格式或者底部使用任意数量”=”或”-“表示最高级标题和第二级标题 — atx格式  例子1： “### 三级标题”  三级标题 例子二: “第二级标题—————–”  第二级标题 区块引用 区块引用使用 “&amp;gt;”,并且可以嵌套使用,其他的Markdown语">
 <meta name="twitter:image" content="https://fenggang1210.github.io/2018/08/27/Markdown语法学习/路径">
   
-    <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    <link rel="alternative" href="/atom.xml" title="Blues" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
@@ -52,7 +52,7 @@
 			<img src="" class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href="/">FengGang</a></h1>
+		  <h1 class="header-author"><a href="/">Blues Feng</a></h1>
 		</hgroup>
 		
 
@@ -110,7 +110,7 @@
 				<img src="" class="js-avatar">
 			</div>
 			<hgroup>
-			  <h1 class="header-author js-header-author">FengGang</h1>
+			  <h1 class="header-author js-header-author">Blues Feng</h1>
 			</hgroup>
 			
 			
@@ -245,9 +245,11 @@
 </blockquote>
 <hr>
 <blockquote>
-<p>参考式连接的定义格式为: [连接文字] [link_id]<br>第一步,要需要显示连接的位置预留一个link_id(名字随便取),如: this is [Baidu] [link_id] reference style,<br>第二步在文章任意位置(实际上并不是任意位置,在区块就不行,不会被解析,只会被当成纯文本显示)对link_id赋值,<br>    [link_id]: <a href="https://www.baidu.com" target="_blank" rel="noopener">https://www.baidu.com</a>  “Baidu”<br>[link_id]: <a href="https://www.baidu.com" target="_blank" rel="noopener">https://www.baidu.com</a>  “Baidu”</p>
+<p>参考式连接的定义格式为: <a href="https://www.baidu.com" title="Baidu" target="_blank" rel="noopener">连接文字</a><br>第一步,要需要显示连接的位置预留一个link_id(名字随便取),如: this is [Baidu] [link_id] reference style,<br>第二步在文章任意位置(实际上并不是任意位置,在区块就不行,不会被解析,只会被当成纯文本显示)对link_id赋值,</p>
 </blockquote>
-<p>简写形式: 可以把第二个中括号置空, 赋值时直接使用第一个中阔号中的名称,如[Baidu] [],<br>    [Baidu]: <a href="https://www.baidu.com" target="_blank" rel="noopener">https://www.baidu.com</a><br>[Baidu]: <a href="https://www.baidu.com" target="_blank" rel="noopener">https://www.baidu.com</a></p>
+<p>[link_id]: <a href="https://www.baidu.com" target="_blank" rel="noopener">https://www.baidu.com</a>  “Baidu”</p>
+<p>简写形式: 可以把第二个中括号置空, 赋值时直接使用第一个中阔号中的名称,如[Baidu] [],</p>
+<p>[Baidu]: <a href="https://www.baidu.com" target="_blank" rel="noopener">https://www.baidu.com</a></p>
 <h2 id="强调"><a href="#强调" class="headerlink" title="强调"></a>强调</h2><blockquote>
 <p>使用<em>或_(底线)强调其包含的文字,<br>一个</em>会被Markdown转化为<code>&lt;em&gt;</code>标签,两个*<em>会被转化为<code>&lt;strong&gt;</code>, _(底线同理).<br>`</em>一个星号<em>`: </em>一个星号*<br><code>__两个底线__</code>: <strong>两个底线</strong></p>
 </blockquote>
@@ -403,7 +405,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2018 FengGang
+    		&copy; 2018 Blues Feng
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
